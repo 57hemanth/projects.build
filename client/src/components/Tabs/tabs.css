@@ -1,0 +1,27 @@
+.border-gradient {
+    cursor: pointer;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #F12711, #4286F4) border-box;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+}
+
+.text-gradient {
+    font-weight: 600;
+    background: linear-gradient(to right, #F12711, #4286F4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.border-gradient:hover {
+    background: linear-gradient(to right, #F12711, #4286F4) border-box;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+
+    & .text-gradient {
+        font-weight: 600;
+        background: #fff;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
